@@ -4,13 +4,17 @@ class Ninja extends Component {
   render() {
     // console.log(this.props);
     const { ninjas } = this.props;
-    return (
-      <div className="ninja">
-        <div>Name:{name}</div>
-        <div>Age: {age}</div>
-        <div>Belt: {belt}</div>
-      </div>
-    );
+    const ninjaList = ninjas.map(ninjas => {
+      return (
+        <div className="ninja">
+          <div>Name:{ninjas.name}</div>
+          <div>Age: {ninjas.age}</div>
+
+          <div>Belt: {ninjas.belt}</div>
+        </div>
+      );
+    });
+    return <div>{ninjaList}</div>;
   }
 }
 
