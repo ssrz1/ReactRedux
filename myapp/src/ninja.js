@@ -3,7 +3,7 @@ import React, { Component } from "react";
 class Ninja extends Component {
   render() {
     // console.log(this.props);
-    const { name, age, belt } = this.props;
+    const { ninjas } = this.props;
     return (
       <div className="ninja">
         <div>Name:{name}</div>
