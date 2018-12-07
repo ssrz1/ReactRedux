@@ -25,6 +25,9 @@ class App extends Component {
       ninjas: ninjas
     });
   };
+  componentDidMount() {
+    console.log("its fire when component will first mount initially ");
+  }
 
   render() {
     return (
