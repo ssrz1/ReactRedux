@@ -1,7 +1,9 @@
 import React, { Component } from "react";
 import Ninjas from "./Ninjas";
 import AddNinja from "./AddNinja";
-
+//kkiji
+//Use Materialze CSS instead of creating our own.
+// https://materializecss.com/
 class App extends Component {
   state = {
     ninjas: [
@@ -28,7 +30,8 @@ class App extends Component {
   componentDidMount() {
     console.log("its fire when component will first mount initially ");
   }
-
+  //this fires when we have UPDATE of states
+  componentDidUpdate() {}
   render() {
     return (
       <div className="App">
